@@ -8,12 +8,14 @@
     <language>en-us</language>
     <lastBuildDate>Fri, 09 Jul 2021 17:39:27 +0530</lastBuildDate><atom:link href="https://spector-9.github.io/info/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>About</title>
+      <title>About Me</title>
       <link>https://spector-9.github.io/info/about/</link>
       <pubDate>Fri, 09 Jul 2021 17:39:27 +0530</pubDate>
       
       <guid>https://spector-9.github.io/info/about/</guid>
-      <description>This is a test Paragraph text</description>
+      <description>My name is Arsh though some of you may know me as Spector. I am an Electronics Engineer but I am equally interested in programming and automation. I like to mess with computers to learn about them.
+I dabble in many different areas like programming, automation, information security, electronics, music, movies, books, gaming and football. Things I am good at
+ C Shell Scripting Linux Terminal and terminal utilities like awk, sed, grep etc.</description>
     </item>
     
   </channel>

@@ -5,25 +5,6 @@
     <link>https://spector-9.github.io/tags/</link>
     <description>Recent content in Tags on Spector&#39;s Website</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 09 Jul 2021 15:59:28 +0530</lastBuildDate><atom:link href="https://spector-9.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>tag1</title>
-      <link>https://spector-9.github.io/tags/tag1/</link>
-      <pubDate>Fri, 09 Jul 2021 15:59:28 +0530</pubDate>
-      
-      <guid>https://spector-9.github.io/tags/tag1/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tag2</title>
-      <link>https://spector-9.github.io/tags/tag2/</link>
-      <pubDate>Fri, 09 Jul 2021 15:59:28 +0530</pubDate>
-      
-      <guid>https://spector-9.github.io/tags/tag2/</guid>
-      <description></description>
-    </item>
-    
+    <language>en-us</language><atom:link href="https://spector-9.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width">
 		
 
-		<title>Just a test Post</title>
+		<title>First Blog</title>
 
 		
 		<link rel="stylesheet" href="https://spector-9.github.io/css/colors-dark.min.04ff1d6d2078fa65747fb72cef57eee0015c1b56e56c24eed85082032b2182f4.css">
@@ -39,10 +39,79 @@
 			<div id="content">
 				
 	<article class="post">
-		<h1><a href="https://spector-9.github.io/blog/a/">Just a test Post</a> </h1>
+		<h1><a href="https://spector-9.github.io/blog/a/">First Blog</a> </h1>
 
-		<div class="post-content"><h1 id="this-is-a-test">This is a test</h1>
-<h2 id="subheading">Subheading</h2>
+		<div class="post-content"><h2 id="this-is-my-first-blog-on-the-site">This is my first blog on the site</h2>
+<p>I don&rsquo;t know exactly if I will be posting regularly on the blogs.
+I am sure not many people are eagerly waiting either.
+However since I used Hugo to create this site I though why not make a tutorial for new users who might want their own website.</p>
+<h2 id="installation">Installation</h2>
+<p>I installed hugo on Artix Linux so it was as easy as</p>
+<pre><code>&gt; pacman -S hugo
+</code></pre><p>You can find hugo on most of the distros and their respective repos.</p>
+<p>After that follow hugo&rsquo;s <a href="https://gohugo.io/getting-started/quick-start/">quick start guide</a> they explain it better than I ever will but come back to this page after you are done there are some small things that need to be done to have a fully functional site.</p>
+<h2 id="setup">Setup</h2>
+<p>Your theme might provide you with enough documentation to completely setup your website but since you returned I would assume it didn&rsquo;t
+Hugo&rsquo;s quick start tutorial ends after creating the first blog.
+Now what if you want to customize the homepage.
+What you need to understand are the basics of hugo.
+Hugo works on templates that automatically get filled with the content from the markdown files your created.</p>
+<p>Open the theme folder and look at the structure you will find that it similar to the parent hugo directory.</p>
+<p>Go to hugo folder then themes &gt; &ldquo;Your theme name&rdquo; &gt; layouts.</p>
+<p>You will see two folders &ldquo;_default&rdquo; and &ldquo;partials&rdquo;</p>
+<ul>
+<li>partials contains snippets of code that are being called by files in &ldquo;_default&rdquo;.</li>
+</ul>
+<p>Go to _default and you should see three files</p>
+<pre><code>baseof.html  list.html  single.html
+</code></pre><p>If you don&rsquo;t see baseof file don&rsquo;t panic its fine.
+Hugo assume that there are two kind of pages one&rsquo;s a list and the other a single page.
+List is where you see your blog titles in a list and links to various other pages and single is when you open the page of a particular post.
+For example currently you are on a single page but when you click on blog you will land to a list page.</p>
+<p>If you still don&rsquo;t get it <a href="https://youtube.com/playlist?list=PLLAZ4kZ9dFpOnyRlyS-liKL5ReHDcj4G3">watch this</a>, a playlist on hugo by Mike Dane.
+You can skip first three episode start from 4th go till 16th.</p>
+<p><strong>Two things you might want to do is create an about page and a special homepage</strong></p>
+<ul>
+<li>copy single.html from the _default folder to hugo&rsquo;s parent directory layouts folder.</li>
+<li>Name it index.html and you have your homepage now to edit it you need to know html.</li>
+</ul>
+<p>Secondly</p>
+<ul>
+<li>Create a separate folder in content folder with any name and a file.</li>
+</ul>
+<pre><code>hugo new name/name.md
+</code></pre><p>This will create folder name with file name.md</p>
+<ul>
+<li>now create folder with same name in layouts directory</li>
+</ul>
+<p>This you can edit directly by editing the markdown file created although you can always change the HTML Layout.</p>
+<p><strong>Remember we are making these folders in hugo&rsquo;s parent folder not the theme folder.</strong></p>
+<h2 id="configuration">Configuration</h2>
+<p>You will find config.toml at the base of hugo directory.
+Open it and fill baseURL = &ldquo;your website url&rdquo;.
+You don&rsquo;t need this for local viewing but if you plan on hosting the website it is required.
+Change the title to whatever you want.
+To add items in the navigation pane of your theme</p>
+<pre><code>[[menu.main]]
+name = &quot;Name for the option&quot;
+url = &quot;URL/the respective directories&quot;
+weight = n, where n is a number
+</code></pre><p>Weight is used to decide the sequence of the options.
+Your url field would contain the link to your website and then the folder if its a list page or folder and then the file if its a single page
+For eg.</p>
+<pre><code>[[menu.main]]
+name = &quot;Blog&quot;
+url = &quot;https://mywebsite.whatever/blog/
+weight = 1
+</code></pre><p>This will give me a option to go the the blog page</p>
+<pre><code>[[menu.main]]
+name = &quot;Blog&quot;
+url = &quot;https://mywebsite.whatever/name/name
+weight = 1
+</code></pre><p>This will open the name markdown you created
+<strong>Remember don&rsquo;t end the url with .md just use the file name</strong></p>
+<p>Finally if you want to add some pictures in any page store the pictures in static/somefolder and refer to them with path /somefolder/img.jpg.
+They won&rsquo;t display on you local server but they will online on your website.</p>
 </div>
 
 		<p class="meta">Posted on <span class="postdate">09. July 2021</span></p>
