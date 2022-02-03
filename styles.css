@@ -1,0 +1,122 @@
+#avatar {
+  display: block;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 38%;
+}
+
+#quote {
+  text-allign: center;
+  display: block;
+  margin-bottom: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  color: #DFBF8E;
+  font-family: 'Courier New';
+}
+
+*{
+   background-color:#1F1F1F;
+}
+
+h1.title{
+  text-allign: center;
+  display: block;
+  margin-left: 2%;
+  margin-right: auto;
+  color: #DFBF8E;
+  font-family: 'Helvetica';
+  font-size: 32px;
+  text-decoration:underline;
+  text-decoration-style: double-dashed;
+}
+
+p.subtitle{
+  text-allign: center;
+  display: block;
+  margin-left: 2%;
+  margin-right: auto;
+  color: white;
+  font-family: 'Courier';
+  font-size: 22px;
+}
+
+div[itemprop="articleBody"] {
+  text-allign: center;
+  display: block;
+  margin-left: 2%;
+  margin-right: auto;
+  color: white;
+  font-family: 'Courier';
+  font-size: 26px;
+}
+
+#bloglist{
+  text-allign: center;
+  font-size: 22px;
+  display: block;
+  margin-left: 2%;
+  margin-right: auto;
+  color: #DFBF8E;
+  font-family: 'Ariel';
+  list-style: none; /* Remove default bullets */
+}
+
+#bloglist::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #ea6962; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+#bloglink:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+#bloglink:visited {
+  color: #00897B;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+#bloglink:hover {
+  color: #e78a4e;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+#bloglink:active {
+  color: #DFBF8E;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+/*Nav Bar*/
+.topnav {
+  overflow: hidden;
+  display: flex;
+  Justify-content: center;
+}
+.topnav a {
+  color: #DFBF8E;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Helvetica';
+  font-size: 18px;
+}
+.topnav a:hover {
+  background-color: #e78a4e;
+  color: black;
+}
+.topnav a.active {
+  background-color: #00897B;
+  color: #DFBF8E;
+}
