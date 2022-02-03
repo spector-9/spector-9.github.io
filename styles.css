@@ -22,7 +22,7 @@
    background-color:#1F1F1F;
 }
 
-h1.title{
+#blogTitle{
   text-allign: center;
   display: block;
   margin-left: 2%;
@@ -31,7 +31,6 @@ h1.title{
   font-family: 'Helvetica';
   font-size: 32px;
   text-decoration:underline;
-  text-decoration-style: double-dashed;
 }
 
 p.subtitle{
